@@ -77,4 +77,6 @@ public class Oper_numeros {
 			System.out.println("Buenos días Ceinmark, soy Carlos González");
 		}
 
+		
+		//crear la nueva función
 }
