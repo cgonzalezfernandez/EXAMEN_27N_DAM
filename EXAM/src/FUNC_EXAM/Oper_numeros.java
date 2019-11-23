@@ -16,6 +16,12 @@ public class Oper_numeros {
 		 
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
+		 
+		 //Añadir la nueva funcionalidad que ha pedido el cliente
+		 //*****************************************
+//		 Crear una función que guarde 4 números en un array e invertidos 
+//		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
+		 //*****************************************
 	}
 
 
@@ -34,7 +40,7 @@ public class Oper_numeros {
 			boolean primoB = true; 
 			int posicion=0;
 			
-			for(int i = 2; i <num; i++) {
+			for(int i = 2; i <=num; i++) {
 				if (num % i == 0) {
 					primoB = false;
 					//Vamos guardando los divisores en un array
