@@ -1,5 +1,6 @@
 package FUNC_EXAM;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Oper_numeros {
@@ -16,6 +17,8 @@ public class Oper_numeros {
 		 
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
+		 
+		 nuevafun();
 		 
 		 //Añadir la nueva funcionalidad que ha pedido el cliente
 		 //*****************************************
@@ -79,4 +82,26 @@ public class Oper_numeros {
 
 		
 		//crear la nueva función
+		public static void nuevafun() {
+			
+			int array[]= new int[4];
+			int suma=0;int suma2 =0;
+			
+			for (int i= 0; i<array.length; i++) {
+				
+				array[i]=i;	
+				suma+=array[i];
+			}System.out.println(Arrays.toString(array));
+			System.out.println("La suma de este array es "+ suma);
+			
+			int array2[]= new int[4];
+			
+			for (int i=array.length-1; i>=0; i--) {
+				
+				array[i]=i;	
+				suma2+=array[i];
+			}System.out.println(Arrays.toString(array2));
+			System.out.println("La suma de este array es "+ suma2);
+		}
+		
 }
