@@ -22,6 +22,10 @@ public class Oper_numeros {
 //		 Crear una función que guarde 4 números en un array e invertidos 
 //		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
 		 //*****************************************
+		 
+		int array[] = new int[] {1,2,3,4};
+		int arrayinv[] = new int[] {4,3,2,1};
+		sumar(array,arrayinv);
 	}
 
 
@@ -75,6 +79,16 @@ public class Oper_numeros {
 			
 			
 			System.out.println("Buenos días Ceinmark, soy Carlos González");
+		}
+		public static void sumar (int[] array, int[] arrayinv) {
+			int res=0;
+			for(int i=0; i<array.length; i++) {
+				for(int j=0; j<array.length; j++) {
+				System.out.println("Resultado de la suma" + (res=array[i] + array[j]));
+				
+				}
+			}
+			
 		}
 
 		
