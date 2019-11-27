@@ -22,8 +22,20 @@ public class Oper_numeros {
 //		 Crear una función que guarde 4 números en un array e invertidos 
 //		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
 		 //*****************************************
+	
+		 int array[]=new int[4];
+		 array=inicializar(array);
+		 System.out.println(" - ");
 	}
 
+	public static int[] inicializar (int[] array) {
+		
+		for(int i=0;i<4;i++) {
+
+		}
+		
+		return array;	
+	}
 
 		public static int pedir_numero() {
 		// TODO Auto-generated method stub
@@ -74,7 +86,7 @@ public class Oper_numeros {
 		public static void saludar() {
 			
 			
-			System.out.println("Buenos días Ceinmark, soy Carlos González");
+			System.out.println("Buenos días Ceinmark, soy Aldama");
 		}
 
 		
