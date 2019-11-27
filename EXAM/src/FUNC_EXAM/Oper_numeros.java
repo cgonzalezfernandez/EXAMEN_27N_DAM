@@ -17,6 +17,7 @@ public class Oper_numeros {
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
 		 
+		 almacenar();
 		 //Añadir la nueva funcionalidad que ha pedido el cliente
 		 //*****************************************
 //		 Crear una función que guarde 4 números en un array e invertidos 
@@ -77,6 +78,21 @@ public class Oper_numeros {
 			System.out.println("Buenos días Ceinmark, soy Carlos González");
 		}
 
+		public static void almacenar() {
+			int array[]=new int[4];
+			int array2[]=new int[4];
+			int sum=0;
+			for(int i=0;i<array.length;i++) {
+				array[i]=i;
+				sum+=i;
+			}
+			int aux=0;
+			for(int i=array.length-1;i>=0;i--) {
+				array2[aux]=array[i];
+				aux++;
+			}
+			System.out.println("la suma del contenido del array es "+sum);
+		}
 		
 		//crear la nueva función
 }
