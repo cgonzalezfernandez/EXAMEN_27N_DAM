@@ -21,9 +21,19 @@ public class Oper_numeros {
 		 //*****************************************
 //		 Crear una función que guarde 4 números en un array e invertidos 
 //		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
+		 metodo();
 		 //*****************************************
 	}
-
+	public static void metodo() {
+		int array[]= new int[4];
+		int array2[]= new int[4];
+		for(int i=0; i>4; i++) {
+			array[i]=i;
+			array2[i]=4-i;
+		}
+		System.out.print("la suma es "+(array[0]+array[1]+array[2]+array[3]));
+		
+	}
 
 		public static int pedir_numero() {
 		// TODO Auto-generated method stub
