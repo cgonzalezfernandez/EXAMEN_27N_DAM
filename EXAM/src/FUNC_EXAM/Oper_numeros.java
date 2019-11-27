@@ -1,5 +1,6 @@
 package FUNC_EXAM;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Oper_numeros {
@@ -17,14 +18,36 @@ public class Oper_numeros {
 		 int suma = suma(num);
 		 System.out.println("Se incrementa el número en 15 unidades"+ ":"+" "+ suma);
 		 
-		 //Añadir la nueva funcionalidad que ha pedido el cliente
-		 //*****************************************
-//		 Crear una función que guarde 4 números en un array e invertidos 
-//		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
-		 //*****************************************
-	}
-
-
+		 int ArrayNum[]=new int[4];
+		 Numeros(ArrayNum);
+		 
+		 int ArrayNumI[]=new int[4];
+		 Invertido(ArrayNumI);
+		 
+		Suma(ArrayNum);
+	}	 
+		public static void Numeros(int[] num){
+			for (int i = 0; i < num.length; i++) {
+				num[i]=i;
+			}
+			
+		}
+		public static void Invertido(int[] num){
+			int j=3;
+			for (int i = 0; i < num.length; i++) {
+						num[i]=j;
+						j-=1;
+					}
+			}
+		
+		public static void Suma(int[] num) {
+			int j=0;
+			for (int i = 0; i < num.length; i++) {
+				j+=num[i];
+			}
+			System.out.println(j);
+		}
+		
 		public static int pedir_numero() {
 		// TODO Auto-generated method stub
 			
