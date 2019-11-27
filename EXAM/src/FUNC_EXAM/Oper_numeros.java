@@ -19,7 +19,9 @@ public class Oper_numeros {
 		 
 		 //Añadir la nueva funcionalidad que ha pedido el cliente
 		 //*****************************************
-//		 Crear una función que guarde 4 números en un array e invertidos 
+		 int array[]=new int[4];
+		 pedir_array(array);
+		 //		Crear una función que guarde 4 números en un array e invertidos 
 //		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
 		 //*****************************************
 	}
@@ -77,6 +79,17 @@ public class Oper_numeros {
 			System.out.println("Buenos días Ceinmark, soy Carlos González");
 		}
 
-		
-		//crear la nueva función
+		public static void pedir_array(int array[]) {
+			Scanner sc = new Scanner(System.in);
+			System.out.println(" introduce los valores del array uno a uno pulsando intro: ");
+
+			for (int i = 0; i < array.length; i++) {
+
+			  array[i] = sc.nextInt();
+			}
+			
 }
+}
+		//crear la nueva función
+		
+
