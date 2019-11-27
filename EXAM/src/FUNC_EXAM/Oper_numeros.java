@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Oper_numeros {
 	
+	private static Object funcionNum;
+
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//examen 1ºDAM
@@ -11,6 +14,7 @@ public class Oper_numeros {
 		System.out.print("Introduce un número para averiguar si es primo o no ");
 		 
 		int num = pedir_numero();
+		int funcionNum;
 		 
 		 comprobar_primo(num);
 		 
@@ -79,4 +83,18 @@ public class Oper_numeros {
 
 		
 		//crear la nueva función
-}
+
+       public static Object funcionNum() {
+    	   Scanner entrada=new Scanner(System.in);
+    	   int[] array= new int[4];
+    	   for(int i=0;i<4;i++) {
+    		   
+    		   
+    	   }
+    	
+		return funcionNum;
+       }
+    	   
+    	   
+    	   
+       }
