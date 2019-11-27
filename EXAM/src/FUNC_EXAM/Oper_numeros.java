@@ -1,10 +1,15 @@
 package FUNC_EXAM;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Oper_numeros {
 	
 	public static void main(String[] args) {
+		
+		
+		array();
+		
 		// TODO Auto-generated method stub
 		//examen 1ºDAM
 		saludar();
@@ -22,6 +27,8 @@ public class Oper_numeros {
 //		 Crear una función que guarde 4 números en un array e invertidos 
 //		 en otro array. Además, el cliente quiere que se visualice la suma de las cuatro cifras.
 		 //*****************************************
+
+		 
 	}
 
 
@@ -79,4 +86,26 @@ public class Oper_numeros {
 
 		
 		//crear la nueva función
+		
+		public static void array() {
+			
+			int array [] = new int[4];
+			int suma = 0;
+			Scanner sc= new Scanner(System.in);
+			System.out.println("Ingresa 4 números: ");
+			
+			for (int i = 0; i < array.length; i++) {
+				
+				System.out.println("Ingresa número:  " +(i+1)+":");
+				array[i] = sc.nextInt();
+				
+				suma = suma + array[i];
+				
+			}
+			
+			
+			System.out.println("Posiciones del array: " + Arrays.toString(array));
+			System.out.println("Suma de los números del array: " + suma+"\n");
+
+		}
 }
