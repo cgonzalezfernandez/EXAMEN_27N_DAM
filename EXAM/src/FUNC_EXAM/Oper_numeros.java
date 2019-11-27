@@ -7,6 +7,7 @@ public class Oper_numeros {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//examen 1ºDAM
+		array();
 		saludar();
 		System.out.print("Introduce un número para averiguar si es primo o no ");
 		 
@@ -79,4 +80,24 @@ public class Oper_numeros {
 
 		
 		//crear la nueva función
+		public static void array() {
+		
+			int array[]=new int[4];
+			int array2[]=new int[4];
+			int suma=0;
+			Scanner teclado=new Scanner(System.in);
+		
+			for (int i = 0; i < array.length; i++) {
+				
+				array[i]=i;
+				suma=suma + array[i];
+				
+				
+			}
+			System.out.println("suma de los numeros="+suma);
+			for (int i = 4; i < array2.length; i--) {
+				System.out.println(array2[i]);
+			}
+	
+		}
 }
